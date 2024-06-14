@@ -1,0 +1,7 @@
+--1. Function to Format Date as MM/DD/YYYY
+CREATE FUNCTION dbo.FormatDateMMDDYYYY (@InputDate DATETIME)
+RETURNS VARCHAR(10)
+AS
+BEGIN
+    RETURN CONVERT(VARCHAR(10), @InputDate, 101);
+END;
